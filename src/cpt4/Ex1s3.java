@@ -23,6 +23,6 @@ public class Ex1s3 {
 	public static void main(String[] args) {
 		int[] d = { 13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15,
 				-4, 7 };
-		P.rintln(maxSubarrayBrute(d));
+		P.rint(maxSubarrayBrute(d));
 	}
 }

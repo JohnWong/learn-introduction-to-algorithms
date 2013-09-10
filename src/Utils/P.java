@@ -8,20 +8,15 @@ public class P {
 	public static void rint(Object o) {
 		if (o.getClass().isArray()) {
 			int length = Array.getLength(o);
-			P.rint("[");
+			System.out.print("[");
 			for (int i = 0; i < length; i++) {
 				if (i != 0)
-					P.rint(", ");
+					System.out.print(", ");
 				System.out.print(Array.get(o, i));
 			}
-			P.rint("]");
+			System.out.println("]");
 		} else
-			System.out.print(o);
-	}
-
-	public static void rintln(Object o) {
-		P.rint(o);
-		System.out.println();
+			System.out.println(o);
 	}
 
 	public static void rint(Object... os) {
@@ -57,7 +52,7 @@ public class P {
 					dataString.append(space(i - 1));
 				dataString.append(String.format("%4d", a[j]));
 			}
-			P.rintln(dataString.toString());
+			P.rint(dataString.toString());
 		}
 	}
 

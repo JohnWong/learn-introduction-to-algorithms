@@ -81,7 +81,7 @@ public class Young {
 		int[][] a = new int[][] { { 2, 3, 8, 9 }, { 4, 5, 16, max },
 				{ 11, 12, max, max } };
 		P.rint(a);
-		P.rintln(extractMin2(a, 0, 0));
+		P.rint(extractMin2(a, 0, 0));
 		P.rint(a);
 	}
 }
